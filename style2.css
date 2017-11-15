@@ -1,0 +1,252 @@
+html { font-family: 'Iropke Batang', serif; }
+html, body { margin: 0; padding: 0; width: 100%; height: 100%;}
+
+.con { width: 100%; height: 100%; }
+.con section { width: 100%; height: 100%; }
+#main{ height: 100vh; 
+       background-repeat:no-repeat;
+       background-attachment: fixed; 
+       background-size: cover;
+       
+     }
+#container {
+    position: relative;
+    overflow: hidden;
+    margin:0 auto;
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one 🙂       */
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#text3{ position: absolute;
+       left:75%;
+       top: 20%;
+       padding-left: 5%;
+       padding-right: 7%;
+}
+#text1{ position: absolute;
+        left: 75%;
+        top: 20%;
+         }
+#text2{ position: absolute;
+        left: 35%;
+        top: 30%;
+         }
+#text{ position: absolute;
+       left:10%;
+       top: 20%;
+       padding-left: 3%;
+}
+h2{color: #563700;
+  font-weight: lighter;
+   font-size: 3em;
+   line-height: 1.7;
+   text-align: center;
+
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+ }
+h1{ font-weight: lighter;
+   color: #563700; 
+   font-size: 2em;
+   writing-mode:tb-rl;
+   line-height: 1.4;
+   text-align: left;
+   }
+h3{ font-weight: lighter;
+   color: #563700; 
+   font-size: 1.5em;
+   line-height: 1.8;
+   text-align: left;
+   }
+
+#video2,#video4,#video6 {
+    position:absolute;
+    left:34%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+
+#video1,#video3,#video5,#video7,#video9 {
+    position:absolute;
+    left:67%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+
+#video8 {
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+input{ position:absolute; top: 77%; left: 15%;}
+
+.button1 {
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f78446;
+}
+
+.button1:hover {
+    background-color: #f78446;
+    color: white;
+}
+
+.flowers-topleft,
+.flowers-topright,
+.flowers-bottomright,
+.flowers-bottomleft {
+  background-size: cover !important;
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  display: none;
+  -webkit-transition: -webkit-transform 1s;
+  transform: transform 1s;
+  position: fixed;
+  z-index: 50;
+  pointer-events: none;
+}
+.flowers-topleft {
+  top: 0%;
+  left: 0%;
+
+  background: url(img/top-left.png) no-repeat right bottom;
+}
+.flowers-topright {
+  top: 0%;
+  right: 0%;
+  background: url(img/top-right.png) no-repeat left bottom;
+}
+.flowers-bottomright {
+  bottom: 0%;
+  right: 0%;
+
+  background: url(img/bottom-right.png) no-repeat left top;
+}
+.flowers-bottomleft {
+  bottom: 0%;
+  left: 0%;
+  background: url(img/bottom-left.png) no-repeat right top;
+}
+.flowers-leaves .flowers-topleft {
+  -moz-transform: translate(-60%, -45%);
+  -webkit-transform: translate(-60%, -45%);
+  -ms-transform: translate(-60%, -45%);
+  transform: translate(-60%, -45%);
+}
+.flowers-leaves .flowers-topright {
+  -moz-transform: translate(20%, -20%);
+  -webkit-transform: translate(20%, -20%);
+  -ms-transform: translate(20%, -20%);
+  transform: translate(20%, -20%);
+}
+.flowers-leaves .flowers-bottomright {
+  -moz-transform: translate(35%, 30%);
+  -webkit-transform: translate(35%, 30%);
+  -ms-transform: translate(35%, 30%);
+  transform: translate(35%, 30%);
+}
+.flowers-leaves .flowers-bottomleft {
+  -moz-transform: translate(-50%, 20%);
+  -webkit-transform: translate(-50%, 20%);
+  -ms-transform: translate(-50%, 20%);
+  transform: translate(-50%, 20%);
+}
+
+.pace-running {
+  overflow: hidden;
+}
+.pace-running .flowers-topleft {
+  -moz-transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+}
+.pace-running .flowers-topright {
+  -moz-transform: translate(100%, -100%);
+  -webkit-transform: translate(100%, -100%);
+  -ms-transform: translate(100%, -100%);
+  transform: translate(100%, -100%);
+}
+.pace-running .flowers-bottomright {
+  --moz-transform: translate(100%, 100%);
+  -webkit-transform: translate(100%, 100%);
+  -ms-transform: translate(100%, 100%);
+  transform: translate(100%, 100%);
+}
+.pace-running .flowers-bottomleft {
+  -moz-transform: translate(-100%, 100%);
+  -webkit-transform: translate(-100%, 100%);
+  -ms-transform: translate(-100%, 100%);
+  transform: translate(-100%, 100%);
+}
+.pace-running .flowers-topleft,
+.pace-running .flowers-topright,
+.pace-running .flowers-bottomright,
+.pace-running .flowers-bottomleft {
+  display: block;
+}
+.pace-done .flowers-topleft,
+.pace-done .flowers-topright,
+.pace-done .flowers-bottomright,
+.pace-done .flowers-bottomleft {
+  display: block;
+}
+
+
+.sidebar { position:absolute; 
+          left:0;}
+
+.dot {display:inline-block; 
+      width:15px; 
+      height:15px; 
+      background-color:lightgrey;
+      border:2px solid lightgrey;
+      border-radius: 15px; 
+      z-index:999; 
+      content:''; 
+      color:transparent; 
+      font-size:1em; 
+      font-weight: 100;
+      line-height:1.4; 
+      vertical-align:middle; 
+      margin:3px 0 3px 0; }
+.dot:hover {background-color:white; border:2px solid #f78446; 
+            color:lightgrey;}
+.dot span {margin:0px 0px 20px 15px; 
+           position:relative; top:0px; left:-38px;}
+nav {width:100px; 
+    height:200px;
+    padding:0 0px; 
+    position:fixed; 
+    top:45%; 
+    right:30px; 
+    transform: translate(0, -50%); 
+    z-index: 10000; 
+    text-align:right;
+}
+nav ul li a {text-decoration:none;}
+nav ul {list-style-type:none; 
+        margin:0; 
+        padding:0;
+}
+.name-active {color:grey; 
+              background-color:#f78446; 
+              border:2px solid #f78446; 
+              text-align:right;}
+
+
